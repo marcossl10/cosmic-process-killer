@@ -2,3 +2,6 @@ fallback_language = "en"
 
 [filter]
 allow = ["en", "pt-BR"]
+
+[fluent]
+assets_dir = "i18n"
