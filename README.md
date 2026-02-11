@@ -29,7 +29,7 @@ A native applet for the COSMIC Desktop Environment designed to manage and kill f
 ```bash
 sudo pacman -S rust cargo git just
 git clone https://github.com/marcossl10/cosmic-process-killer.git
-cd cosmic-applet-process-killer
+cd cosmic-process-killer
 cargo build --release
 just install
 ```
@@ -39,7 +39,7 @@ just install
 ```bash
 sudo dnf install rust cargo git just
 git clone https://github.com/marcossl10/cosmic-process-killer.git
-cd cosmic-applet-process-killer
+cd cosmic-process-killer
 cargo build --release
 just install
 ```
