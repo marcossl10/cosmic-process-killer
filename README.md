@@ -1,5 +1,7 @@
 # COSMIC Process Killer
 
+![Applet View](applet-cosmic-process.png)
+
 A native applet for the COSMIC Desktop Environment designed to manage and kill frozen or resource-heavy processes efficiently.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Rust](https://img.shields.io/badge/built_with-Rust-orange.svg) ![COSMIC](https://img.shields.io/badge/desktop-COSMIC-purple.svg)
@@ -64,6 +66,8 @@ sudo just install
 4. Use the search bar to filter specific applications.
 
 ### 🚨 Emergency Mode (Standalone)
+
+![Standalone View](standalone.png)
 
 **What if the panel freezes?** Don't worry! There's a standalone mode that works independently:
 
