@@ -5,7 +5,7 @@ edition = "2021"
 license = "MIT"
 description = "COSMIC applet to kill frozen processes"
 repository = "https://github.com/marcossl10/cosmic-process-killer"
-default-run = "cosmic-applet-process-killer"
+default-run = "cosmic-process-killer"
 
 [lib]
 name = "cosmic_applet_process_killer"
