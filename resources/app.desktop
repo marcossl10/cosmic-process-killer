@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=Process Killer
+Comment=COSMIC applet to kill frozen processes
+Type=Application
+Icon=com.system.CosmicProcessKiller
+Exec=cosmic-applet-process-killer %F
+Terminal=false
+StartupNotify=true
+Categories=COSMIC;System;Monitor;
+Keywords=COSMIC;process;kill;task;manager;
+NoDisplay=true
+X-CosmicApplet=true
+X-CosmicHoverPopup=Auto
+MimeType=

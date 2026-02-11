@@ -1,0 +1,21 @@
+# Rust build artifacts
+/target/
+
+# Backup files
+**/*.rs.bk
+
+# IDE and Editor settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Local scripts and templates
+simulate_crash.sh
+
+# Note: Cargo.lock is intentionally not ignored as this is an application.

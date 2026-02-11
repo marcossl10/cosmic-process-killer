@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Process Killer (Standalone)
+Comment=Kill frozen processes - Emergency mode
+Type=Application
+Icon=com.system.CosmicProcessKiller
+Exec=cosmic-process-killer
+Terminal=false
+StartupNotify=true
+Categories=System;Monitor;Utility;
+Keywords=process;kill;task;manager;emergency;
+NoDisplay=false
