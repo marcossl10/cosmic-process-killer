@@ -1,5 +1,5 @@
 name := 'cosmic-process-killer'
-standalone := 'cosmic-process-killer'
+standalone := 'cosmic-process-killer-standalone'
 appid := 'com.system.CosmicProcessKiller'
 
 rootdir := ''
