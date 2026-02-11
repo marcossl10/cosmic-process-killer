@@ -2,7 +2,9 @@
 
 //! Standalone window mode - can be launched independently of the panel
 
+#[allow(unused_imports)]
 use crate::fl;
+#[allow(dead_code)]
 use crate::process::{ProcessError, ProcessInfo, ProcessManager, SortBy};
 use cosmic::iced::{Alignment, Length};
 use cosmic::prelude::*;
@@ -10,6 +12,7 @@ use cosmic::widget;
 use futures_util::SinkExt;
 use std::time::Duration;
 
+#[allow(dead_code)]
 pub struct StandaloneApp {
     core: cosmic::Core,
     process_manager: ProcessManager,
@@ -23,17 +26,20 @@ pub struct StandaloneApp {
 }
 
 #[derive(Debug, Clone, PartialEq)]
+#[allow(dead_code)]
 pub enum ConfirmationMode {
     Kill,
     ForceKill,
 }
 
 #[derive(Debug, Clone, PartialEq)]
+#[allow(dead_code)]
 pub struct Toast {
     message: String,
     is_error: bool,
 }
 
+#[allow(dead_code)]
 #[derive(Debug, Clone)]
 pub enum Message {
     RefreshProcesses,
@@ -345,6 +351,7 @@ impl cosmic::Application for StandaloneApp {
 }
 
 impl StandaloneApp {
+    #[allow(dead_code)]
     fn refresh_processes(&mut self) {
         let mut processes = self.process_manager.get_processes(self.sort_by);
         if !self.show_all {
@@ -353,6 +360,7 @@ impl StandaloneApp {
         self.processes = processes;
     }
 
+    #[allow(dead_code)]
     fn get_filtered_processes(&self) -> Vec<&ProcessInfo> {
         if self.search_query.is_empty() {
             self.processes.iter().collect()
@@ -368,6 +376,7 @@ impl StandaloneApp {
         }
     }
 
+    #[allow(dead_code)]
     fn handle_kill_process(&mut self, pid: u32, force: bool) {
         // Find the process
         let process = match self.processes.iter().find(|p| p.pid == pid) {
@@ -416,6 +425,7 @@ impl StandaloneApp {
         });
     }
 
+    #[allow(dead_code)]
     fn execute_kill(&mut self, process: &ProcessInfo, force: bool) {
         let result = if force {
             self.process_manager.force_kill_process(process.pid)
@@ -463,6 +473,7 @@ impl StandaloneApp {
         }
     }
 
+    #[allow(dead_code)]
     fn create_process_row<'a>(&self, process: &'a ProcessInfo) -> Element<'a, Message> {
         let is_selected = self.selected_process.as_ref().map(|p| p.pid) == Some(process.pid);
 

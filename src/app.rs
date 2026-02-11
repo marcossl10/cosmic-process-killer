@@ -70,6 +70,7 @@ impl Default for AppModel {
 
 /// Messages emitted by the application and its widgets.
 #[derive(Debug, Clone)]
+#[allow(dead_code)]
 pub enum Message {
     TogglePopup,
     PopupClosed(Id),

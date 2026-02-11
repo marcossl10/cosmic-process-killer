@@ -9,6 +9,7 @@ pub type ProcessResult<T> = Result<T, ProcessError>;
 
 /// Error types for process operations
 #[derive(Debug, Clone, PartialEq)]
+#[allow(dead_code)]
 pub enum ProcessError {
     /// Process not found
     NotFound,
@@ -104,6 +105,7 @@ impl ProcessManager {
         processes
     }
 
+    #[allow(dead_code)]
     pub fn get_high_cpu_processes(&mut self, threshold: f32, sort_by: SortBy) -> Vec<ProcessInfo> {
         self.get_processes(sort_by)
             .into_iter()
@@ -111,6 +113,7 @@ impl ProcessManager {
             .collect()
     }
 
+    #[allow(dead_code)]
     pub fn get_process_by_pid(&mut self, pid: u32) -> Option<ProcessInfo> {
         self.refresh();
         
