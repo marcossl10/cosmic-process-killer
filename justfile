@@ -1,4 +1,4 @@
-name := 'cosmic-applet-process-killer'
+name := 'cosmic-process-killer'
 standalone := 'cosmic-process-killer'
 appid := 'com.system.CosmicProcessKiller'
 
