@@ -1,20 +1,4 @@
-# i18n.toml configuration for i18n-embed
-# This file is required for the i18n-embed crate to work
-
-[fallback_language]
-language = "en"
+fallback_language = "en"
 
 [filter]
-# Include only specific languages
 allow = ["en", "pt-BR"]
-
-[languages]
-# Configure supported languages
-# The order matters: first language has highest priority
-[languages.en]
-# English (US)
-# This is the fallback language
-
-[languages.pt-BR]
-# Portuguese (Brazil)
-# Add custom attributes here if needed
