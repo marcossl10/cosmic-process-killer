@@ -31,7 +31,7 @@ sudo pacman -S rust cargo git just
 git clone https://github.com/marcossl10/cosmic-process-killer.git
 cd cosmic-process-killer
 cargo build --release
-just install
+sudo just install
 ```
 
 ### Fedora Linux
@@ -41,7 +41,7 @@ sudo dnf install rust cargo git just
 git clone https://github.com/marcossl10/cosmic-process-killer.git
 cd cosmic-process-killer
 cargo build --release
-just install
+sudo just install
 ```
 
 ### Pop!_OS
@@ -49,9 +49,9 @@ just install
 ```bash
 sudo apt install rustc cargo git just
 git clone https://github.com/marcossl10/cosmic-process-killer.git
-cd cosmic-applet-process-killer
+cd cosmic-process-killer
 cargo build --release
-just install
+sudo just install
 ```
 
 ## 🎯 Usage
