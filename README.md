@@ -68,10 +68,10 @@ sudo just install
 **What if the panel freezes?** Don't worry! There's a standalone mode that works independently:
 
 ```bash
-cosmic-process-killer
+cosmic-process-killer-standalone
 ```
 
-**Tip:** Configure a keyboard shortcut (like `Ctrl+Shift+Esc`) for `cosmic-process-killer` in COSMIC Settings → Keyboard → Shortcuts.
+**Tip:** Configure a keyboard shortcut (like `Ctrl+Shift+Esc`) for `cosmic-process-killer-standalone` in COSMIC Settings → Keyboard → Shortcuts.
 
 ## ⚠️ Warnings
 
